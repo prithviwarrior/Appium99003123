@@ -54,6 +54,8 @@ TC1_VerifyCarinfo
     # Element Text Should Be    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]    Petrol
     
      Go Back
+     
+
 
     # Close Application
     
