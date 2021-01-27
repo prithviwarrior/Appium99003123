@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210127 15:44:08.701" rpa="false">
+<suite id="s1" name="Appium99003123" source="C:\Users\CTEA\eclipse-workspace\Robot_Framework\Robot_workspace\Appium99003123">
+<suite id="s1-s1" name="CarInfo" source="C:\Users\CTEA\eclipse-workspace\Robot_Framework\Robot_workspace\Appium99003123\CarInfo">
+<suite id="s1-s1-s1" name="Verify CarInfo test" source="C:\Users\CTEA\eclipse-workspace\Robot_Framework\Robot_workspace\Appium99003123\CarInfo\Verify_CarInfo_test.robot">
+<test id="s1-s1-s1-t1" name="TC1_VerifyCarinfo">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=android</arg>
+<arg>deviceName=redmi</arg>
+<arg>appPackage=com.cuvora.carinfo</arg>
+<arg>appActivity=com.cuvora.carinfo.activity.HomePageActivity</arg>
+<arg>noReset=True</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:09.036" endtime="20210127 15:44:25.868"></status>
+</kw>
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:25.869" endtime="20210127 15:44:25.870"></status>
+</kw>
+<kw name="Tap" library="AppiumLibrary">
+<doc>Tap element identified by ``locator``.</doc>
+<arguments>
+<arg>//*</arg>
+<arg>273</arg>
+<arg>2096</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:25.870" endtime="20210127 15:44:27.476"></status>
+</kw>
+<kw name="${i} IN RANGE [ 0 | 999 ]" type="for">
+<kw name="${i} = 0" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"LAND ROVER")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"LAND ROVER")]</arg>
+</arguments>
+<msg timestamp="20210127 15:44:27.479" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210127 15:44:28.518" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 15:44:27.738" endtime="20210127 15:44:28.519"></status>
+</kw>
+<msg timestamp="20210127 15:44:28.521" level="FAIL">ValueError: Element locator '//*[contains(@text,"LAND ROVER")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210127 15:44:27.478" endtime="20210127 15:44:28.521"></status>
+</kw>
+<msg timestamp="20210127 15:44:28.522" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"LAND ROVER")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210127 15:44:27.477" endtime="20210127 15:44:28.522"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>1000</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:28.522" endtime="20210127 15:44:29.999"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${output}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:30.000" endtime="20210127 15:44:30.001"></status>
+</kw>
+<status status="PASS" starttime="20210127 15:44:27.477" endtime="20210127 15:44:30.001"></status>
+</kw>
+<kw name="${i} = 1" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"LAND ROVER")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"LAND ROVER")]</arg>
+</arguments>
+<msg timestamp="20210127 15:44:30.004" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20210127 15:44:31.013" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 15:44:30.373" endtime="20210127 15:44:31.013"></status>
+</kw>
+<msg timestamp="20210127 15:44:31.014" level="FAIL">ValueError: Element locator '//*[contains(@text,"LAND ROVER")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210127 15:44:30.002" endtime="20210127 15:44:31.015"></status>
+</kw>
+<msg timestamp="20210127 15:44:31.015" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"LAND ROVER")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210127 15:44:30.002" endtime="20210127 15:44:31.015"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>1000</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:31.016" endtime="20210127 15:44:32.345"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${output}[0]'=='PASS'</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:32.346" endtime="20210127 15:44:32.347"></status>
+</kw>
+<status status="PASS" starttime="20210127 15:44:30.002" endtime="20210127 15:44:32.347"></status>
+</kw>
+<kw name="${i} = 2" type="foritem">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<arguments>
+<arg>Click Element</arg>
+<arg>//*[contains(@text,"LAND ROVER")]</arg>
+</arguments>
+<assign>
+<var>${output}</var>
+</assign>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>//*[contains(@text,"LAND ROVER")]</arg>
+</arguments>
+<msg timestamp="20210127 15:44:32.350" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
+<status status="PASS" starttime="20210127 15:44:32.348" endtime="20210127 15:44:34.908"></status>
+</kw>
+<msg timestamp="20210127 15:44:34.909" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210127 15:44:32.348" endtime="20210127 15:44:34.909"></status>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<arguments>
+<arg>50</arg>
+<arg>75</arg>
+<arg>50</arg>
+<arg>25</arg>
+<arg>1000</arg>
+</arguments>
+<status status="PASS" starttime="20210127 15:44:34.909" endtime="20210127 15:44:36.773"></status>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<arguments>
+<arg>'${output}[0]'=='PASS'</arg>
+</arguments>
+<msg timestamp="20210127 15:44:36.774" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210127 15:44:36.773" endtime="20210127 15:44:36.774"></status>
+</kw>
+<status status="PASS" starttime="20210127 15:44:32.347" endtime="20210127 15:44:36.775"></status>
+</kw>
+<status status="PASS" starttime="20210127 15:44:27.476" endtime="20210127 15:44:36.775"></status>
+</kw>
+<status status="PASS" starttime="20210127 15:44:09.035" endtime="20210127 15:44:36.776" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210127 15:44:08.804" endtime="20210127 15:44:36.777"></status>
+</suite>
+<status status="PASS" starttime="20210127 15:44:08.799" endtime="20210127 15:44:36.780"></status>
+</suite>
+<status status="PASS" starttime="20210127 15:44:08.762" endtime="20210127 15:44:36.783"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Appium99003123">Appium99003123</stat>
+<stat pass="1" fail="0" id="s1-s1" name="CarInfo">Appium99003123.CarInfo</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="Verify CarInfo test">Appium99003123.CarInfo.Verify CarInfo test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
