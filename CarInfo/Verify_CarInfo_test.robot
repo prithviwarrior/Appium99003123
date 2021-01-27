@@ -27,7 +27,7 @@ TC1_VerifyCarinfo
     
     FOR    ${i}    IN RANGE    0    999
         ${output}    Run Keyword And Ignore Error    Click Element    //*[contains(@text,"Range Rover Evoque")]        
-        Swipe By Percent    50    75    50    25    1000    
+        Swipe By Percent    50    75    50    50    1000    
         Exit For Loop If    '${output}[0]'=='PASS'
     END  
     
@@ -38,9 +38,20 @@ TC1_VerifyCarinfo
     END
     
     ${elements}    Get Webelements    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]
-    Log To Console    ${elements}        
+    Log To Console    ${elements}  
+    
+    FOR    ${ele}    IN    @{elements}
+        ${output}    Run Keyword And Ignore Error    Element Text Should Be    ${ele}    Petrol        
+        ${text}    Get Text    ${ele}
+        Log To Console    ${text}    
+        
+        ${result}    Run Keyword If    '${output}[0]'=='PASS'    Set Variable    passed    
+        Exit For Loop If    '${output}[0]'=='PASS'
+    END      
+    
 
-    Element Text Should Be    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]    Petrol
+    Should Be Equal    ${result}    passed    
+    # Element Text Should Be    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]    Petrol
     
  
     # Close Application
