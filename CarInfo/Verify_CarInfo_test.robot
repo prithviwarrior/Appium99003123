@@ -1,10 +1,13 @@
 *** Settings ***
 Library    AppiumLibrary    
-
+Library    Screenshot
 
 *** Test Cases ***
 
 TC1_VerifyCarinfo
+    Screenshot.Set Screenshot Directory    C:/Users/CTEA/eclipse-workspace/Robot_Framework/Robot_workspace/Appium99003123/Screenshots
+    # Log To Console    ${OUTPUT_DIR}    
+
     Open Application    http://localhost:4723/wd/hub
     ...    platformName=android
     ...    deviceName=redmi

@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210127 16:55:05.928" rpa="false">
+<robot generator="Robot 3.2.2 (Python 3.7.9 on win32)" generated="20210127 17:30:23.076" rpa="false">
 <suite id="s1" name="Appium99003123" source="C:\Users\CTEA\eclipse-workspace\Robot_Framework\Robot_workspace\Appium99003123">
 <suite id="s1-s1" name="CarInfo" source="C:\Users\CTEA\eclipse-workspace\Robot_Framework\Robot_workspace\Appium99003123\CarInfo">
 <suite id="s1-s1-s1" name="Verify CarInfo test" source="C:\Users\CTEA\eclipse-workspace\Robot_Framework\Robot_workspace\Appium99003123\CarInfo\Verify_CarInfo_test.robot">
 <test id="s1-s1-s1-t1" name="TC1_VerifyCarinfo">
+<kw name="Set Screenshot Directory" library="Screenshot">
+<doc>Sets the directory where screenshots are saved.</doc>
+<arguments>
+<arg>C:/Users/CTEA/eclipse-workspace/Robot_Framework/Robot_workspace/Appium99003123/Screenshots</arg>
+</arguments>
+<status status="PASS" starttime="20210127 17:30:23.592" endtime="20210127 17:30:23.593"></status>
+</kw>
 <kw name="Open Application" library="AppiumLibrary">
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
@@ -19,14 +26,14 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>appActivity=com.cuvora.carinfo.activity.HomePageActivity</arg>
 <arg>noReset=True</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:06.297" endtime="20210127 16:55:22.583"></status>
+<status status="PASS" starttime="20210127 17:30:23.594" endtime="20210127 17:30:37.668"></status>
 </kw>
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <doc>Sets the timeout in seconds used by various keywords.</doc>
 <arguments>
 <arg>30s</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:22.583" endtime="20210127 16:55:22.585"></status>
+<status status="PASS" starttime="20210127 17:30:37.668" endtime="20210127 17:30:37.669"></status>
 </kw>
 <kw name="Tap" library="AppiumLibrary">
 <doc>Tap element identified by ``locator``.</doc>
@@ -35,7 +42,7 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>273</arg>
 <arg>2096</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:22.585" endtime="20210127 16:55:24.113"></status>
+<status status="PASS" starttime="20210127 17:30:37.670" endtime="20210127 17:30:39.169"></status>
 </kw>
 <kw name="${i} IN RANGE [ 0 | 999 ]" type="for">
 <kw name="${i} = 0" type="foritem">
@@ -53,17 +60,17 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arguments>
 <arg>//*[contains(@text,"LAND ROVER")]</arg>
 </arguments>
-<msg timestamp="20210127 16:55:24.116" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
+<msg timestamp="20210127 17:30:39.173" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:24.875" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:24.347" endtime="20210127 16:55:24.875"></status>
+<msg timestamp="20210127 17:30:40.221" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:39.392" endtime="20210127 17:30:40.221"></status>
 </kw>
-<msg timestamp="20210127 16:55:24.877" level="FAIL">ValueError: Element locator '//*[contains(@text,"LAND ROVER")]' did not match any elements.</msg>
-<status status="FAIL" starttime="20210127 16:55:24.114" endtime="20210127 16:55:24.877"></status>
+<msg timestamp="20210127 17:30:40.223" level="FAIL">ValueError: Element locator '//*[contains(@text,"LAND ROVER")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210127 17:30:39.171" endtime="20210127 17:30:40.223"></status>
 </kw>
-<msg timestamp="20210127 16:55:24.878" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"LAND ROVER")]\' did not match any elements.')</msg>
-<status status="PASS" starttime="20210127 16:55:24.114" endtime="20210127 16:55:24.878"></status>
+<msg timestamp="20210127 17:30:40.224" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"LAND ROVER")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210127 17:30:39.171" endtime="20210127 17:30:40.224"></status>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
@@ -75,16 +82,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>25</arg>
 <arg>1000</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:24.878" endtime="20210127 16:55:26.255"></status>
+<status status="PASS" starttime="20210127 17:30:40.224" endtime="20210127 17:30:41.621"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:26.255" endtime="20210127 16:55:26.256"></status>
+<status status="PASS" starttime="20210127 17:30:41.622" endtime="20210127 17:30:41.623"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:24.114" endtime="20210127 16:55:26.257"></status>
+<status status="PASS" starttime="20210127 17:30:39.170" endtime="20210127 17:30:41.623"></status>
 </kw>
 <kw name="${i} = 1" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
@@ -101,17 +108,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arguments>
 <arg>//*[contains(@text,"LAND ROVER")]</arg>
 </arguments>
-<msg timestamp="20210127 16:55:26.260" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
+<msg timestamp="20210127 17:30:41.626" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:27.328" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:26.730" endtime="20210127 16:55:27.329"></status>
+<msg timestamp="20210127 17:30:42.827" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:42.045" endtime="20210127 17:30:42.827"></status>
 </kw>
-<msg timestamp="20210127 16:55:27.330" level="FAIL">ValueError: Element locator '//*[contains(@text,"LAND ROVER")]' did not match any elements.</msg>
-<status status="FAIL" starttime="20210127 16:55:26.258" endtime="20210127 16:55:27.330"></status>
+<msg timestamp="20210127 17:30:42.828" level="FAIL">ValueError: Element locator '//*[contains(@text,"LAND ROVER")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210127 17:30:41.624" endtime="20210127 17:30:42.829"></status>
 </kw>
-<msg timestamp="20210127 16:55:27.331" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"LAND ROVER")]\' did not match any elements.')</msg>
-<status status="PASS" starttime="20210127 16:55:26.257" endtime="20210127 16:55:27.331"></status>
+<msg timestamp="20210127 17:30:42.829" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"LAND ROVER")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210127 17:30:41.623" endtime="20210127 17:30:42.829"></status>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
@@ -123,16 +130,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>25</arg>
 <arg>1000</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:27.331" endtime="20210127 16:55:28.714"></status>
+<status status="PASS" starttime="20210127 17:30:42.830" endtime="20210127 17:30:44.257"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:28.715" endtime="20210127 16:55:28.716"></status>
+<status status="PASS" starttime="20210127 17:30:44.258" endtime="20210127 17:30:44.259"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:26.257" endtime="20210127 16:55:28.716"></status>
+<status status="PASS" starttime="20210127 17:30:41.623" endtime="20210127 17:30:44.259"></status>
 </kw>
 <kw name="${i} = 2" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
@@ -149,11 +156,11 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arguments>
 <arg>//*[contains(@text,"LAND ROVER")]</arg>
 </arguments>
-<msg timestamp="20210127 16:55:28.719" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
-<status status="PASS" starttime="20210127 16:55:28.717" endtime="20210127 16:55:29.584"></status>
+<msg timestamp="20210127 17:30:44.262" level="INFO">Clicking element '//*[contains(@text,"LAND ROVER")]'.</msg>
+<status status="PASS" starttime="20210127 17:30:44.261" endtime="20210127 17:30:44.485"></status>
 </kw>
-<msg timestamp="20210127 16:55:29.585" level="INFO">${output} = ('PASS', None)</msg>
-<status status="PASS" starttime="20210127 16:55:28.716" endtime="20210127 16:55:29.585"></status>
+<msg timestamp="20210127 17:30:44.486" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210127 17:30:44.260" endtime="20210127 17:30:44.486"></status>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
@@ -165,19 +172,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>25</arg>
 <arg>1000</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:29.586" endtime="20210127 16:55:32.121"></status>
+<status status="PASS" starttime="20210127 17:30:44.486" endtime="20210127 17:30:46.077"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<msg timestamp="20210127 16:55:32.122" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20210127 16:55:32.121" endtime="20210127 16:55:32.123"></status>
+<msg timestamp="20210127 17:30:46.079" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210127 17:30:46.077" endtime="20210127 17:30:46.079"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:28.716" endtime="20210127 16:55:32.123"></status>
+<status status="PASS" starttime="20210127 17:30:44.260" endtime="20210127 17:30:46.080"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:24.113" endtime="20210127 16:55:32.123"></status>
+<status status="PASS" starttime="20210127 17:30:39.170" endtime="20210127 17:30:46.080"></status>
 </kw>
 <kw name="${i} IN RANGE [ 0 | 999 ]" type="for">
 <kw name="${i} = 0" type="foritem">
@@ -195,11 +202,11 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arguments>
 <arg>//*[contains(@text,"Range Rover Evoque")]</arg>
 </arguments>
-<msg timestamp="20210127 16:55:32.126" level="INFO">Clicking element '//*[contains(@text,"Range Rover Evoque")]'.</msg>
-<status status="PASS" starttime="20210127 16:55:32.125" endtime="20210127 16:55:34.170"></status>
+<msg timestamp="20210127 17:30:46.084" level="INFO">Clicking element '//*[contains(@text,"Range Rover Evoque")]'.</msg>
+<status status="PASS" starttime="20210127 17:30:46.082" endtime="20210127 17:30:46.467"></status>
 </kw>
-<msg timestamp="20210127 16:55:34.171" level="INFO">${output} = ('PASS', None)</msg>
-<status status="PASS" starttime="20210127 16:55:32.124" endtime="20210127 16:55:34.171"></status>
+<msg timestamp="20210127 17:30:46.468" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210127 17:30:46.082" endtime="20210127 17:30:46.468"></status>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
@@ -211,19 +218,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>50</arg>
 <arg>1000</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:34.171" endtime="20210127 16:55:35.973"></status>
+<status status="PASS" starttime="20210127 17:30:46.469" endtime="20210127 17:30:48.249"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<msg timestamp="20210127 16:55:35.974" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20210127 16:55:35.973" endtime="20210127 16:55:35.974"></status>
+<msg timestamp="20210127 17:30:48.251" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210127 17:30:48.250" endtime="20210127 17:30:48.251"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:32.124" endtime="20210127 16:55:35.975"></status>
+<status status="PASS" starttime="20210127 17:30:46.081" endtime="20210127 17:30:48.251"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:32.124" endtime="20210127 16:55:35.975"></status>
+<status status="PASS" starttime="20210127 17:30:46.081" endtime="20210127 17:30:48.251"></status>
 </kw>
 <kw name="${i} IN RANGE [ 0 | 999 ]" type="for">
 <kw name="${i} = 0" type="foritem">
@@ -241,17 +248,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arguments>
 <arg>//*[contains(@text,"HSE Dynamic Petrol")]</arg>
 </arguments>
-<msg timestamp="20210127 16:55:35.978" level="INFO">Clicking element '//*[contains(@text,"HSE Dynamic Petrol")]'.</msg>
+<msg timestamp="20210127 17:30:48.255" level="INFO">Clicking element '//*[contains(@text,"HSE Dynamic Petrol")]'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:37.104" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:36.548" endtime="20210127 16:55:37.104"></status>
+<msg timestamp="20210127 17:30:49.317" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:48.582" endtime="20210127 17:30:49.318"></status>
 </kw>
-<msg timestamp="20210127 16:55:37.105" level="FAIL">ValueError: Element locator '//*[contains(@text,"HSE Dynamic Petrol")]' did not match any elements.</msg>
-<status status="FAIL" starttime="20210127 16:55:35.976" endtime="20210127 16:55:37.106"></status>
+<msg timestamp="20210127 17:30:49.319" level="FAIL">ValueError: Element locator '//*[contains(@text,"HSE Dynamic Petrol")]' did not match any elements.</msg>
+<status status="FAIL" starttime="20210127 17:30:48.253" endtime="20210127 17:30:49.319"></status>
 </kw>
-<msg timestamp="20210127 16:55:37.106" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"HSE Dynamic Petrol")]\' did not match any elements.')</msg>
-<status status="PASS" starttime="20210127 16:55:35.976" endtime="20210127 16:55:37.106"></status>
+<msg timestamp="20210127 17:30:49.319" level="INFO">${output} = ('FAIL', 'ValueError: Element locator \'//*[contains(@text,"HSE Dynamic Petrol")]\' did not match any elements.')</msg>
+<status status="PASS" starttime="20210127 17:30:48.252" endtime="20210127 17:30:49.320"></status>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
@@ -263,16 +270,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>25</arg>
 <arg>1000</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:37.107" endtime="20210127 16:55:38.640"></status>
+<status status="PASS" starttime="20210127 17:30:49.320" endtime="20210127 17:30:50.683"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:38.641" endtime="20210127 16:55:38.642"></status>
+<status status="PASS" starttime="20210127 17:30:50.684" endtime="20210127 17:30:50.685"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:35.976" endtime="20210127 16:55:38.642"></status>
+<status status="PASS" starttime="20210127 17:30:48.252" endtime="20210127 17:30:50.686"></status>
 </kw>
 <kw name="${i} = 1" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
@@ -289,11 +296,11 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arguments>
 <arg>//*[contains(@text,"HSE Dynamic Petrol")]</arg>
 </arguments>
-<msg timestamp="20210127 16:55:38.645" level="INFO">Clicking element '//*[contains(@text,"HSE Dynamic Petrol")]'.</msg>
-<status status="PASS" starttime="20210127 16:55:38.643" endtime="20210127 16:55:39.122"></status>
+<msg timestamp="20210127 17:30:50.689" level="INFO">Clicking element '//*[contains(@text,"HSE Dynamic Petrol")]'.</msg>
+<status status="PASS" starttime="20210127 17:30:50.687" endtime="20210127 17:30:50.950"></status>
 </kw>
-<msg timestamp="20210127 16:55:39.123" level="INFO">${output} = ('PASS', None)</msg>
-<status status="PASS" starttime="20210127 16:55:38.643" endtime="20210127 16:55:39.123"></status>
+<msg timestamp="20210127 17:30:50.950" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210127 17:30:50.686" endtime="20210127 17:30:50.950"></status>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
@@ -305,19 +312,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>25</arg>
 <arg>1000</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:39.124" endtime="20210127 16:55:41.017"></status>
+<status status="PASS" starttime="20210127 17:30:50.951" endtime="20210127 17:30:52.957"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<msg timestamp="20210127 16:55:41.019" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20210127 16:55:41.018" endtime="20210127 16:55:41.019"></status>
+<msg timestamp="20210127 17:30:52.959" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210127 17:30:52.958" endtime="20210127 17:30:52.959"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:38.642" endtime="20210127 16:55:41.020"></status>
+<status status="PASS" starttime="20210127 17:30:50.686" endtime="20210127 17:30:52.959"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:35.975" endtime="20210127 16:55:41.021"></status>
+<status status="PASS" starttime="20210127 17:30:48.252" endtime="20210127 17:30:52.959"></status>
 </kw>
 <kw name="Get Webelements" library="AppiumLibrary">
 <doc>Returns list of [http://selenium-python.readthedocs.io/api.html#module-selenium.webdriver.remote.webelement|WebElement] objects matching ``locator``.</doc>
@@ -327,18 +334,18 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${elements}</var>
 </assign>
-<msg timestamp="20210127 16:55:41.829" level="INFO">${elements} = [&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="67aefae2-7895-48d8-8702-b9162e16648d")&gt;, &lt;appium.webdriver.webelement.WebElement (session="f74c2169-4...</msg>
-<status status="PASS" starttime="20210127 16:55:41.021" endtime="20210127 16:55:41.830"></status>
+<msg timestamp="20210127 17:30:53.189" level="INFO">${elements} = [&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="37f30a40-31a8-4cb5-aca1-516091d838f8")&gt;, &lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-a...</msg>
+<status status="PASS" starttime="20210127 17:30:52.960" endtime="20210127 17:30:53.189"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${elements}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:41.830" endtime="20210127 16:55:41.831"></status>
+<status status="PASS" starttime="20210127 17:30:53.190" endtime="20210127 17:30:53.190"></status>
 </kw>
 <kw name="${ele} IN [ @{elements} ]" type="for">
-<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;f74c2169-4807-4c24-b694-add119397028&quot;, element=&quot;67aefae2-7895-48d8-8702-b9162e16648d&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;bc4a33ee-aebe-4358-a14a-5a90e61a9403&quot;, element=&quot;37f30a40-31a8-4cb5-aca1-516091d838f8&quot;)&gt;" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <arguments>
@@ -355,17 +362,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${ele}</arg>
 <arg>Petrol</arg>
 </arguments>
-<msg timestamp="20210127 16:55:41.835" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="67aefae2-7895-48d8-8702-b9162e16648d")&gt;' contains exactly text 'Petrol'.</msg>
+<msg timestamp="20210127 17:30:53.195" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="37f30a40-31a8-4cb5-aca1-516091d838f8")&gt;' contains exactly text 'Petrol'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:42.397" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:41.877" endtime="20210127 16:55:42.398"></status>
+<msg timestamp="20210127 17:30:54.317" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:53.808" endtime="20210127 17:30:54.318"></status>
 </kw>
-<msg timestamp="20210127 16:55:42.399" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="67aefae2-7895-48d8-8702-b9162e16648d")&gt;' should have been 'Petrol' but in fact it was '4370'.</msg>
-<status status="FAIL" starttime="20210127 16:55:41.833" endtime="20210127 16:55:42.399"></status>
+<msg timestamp="20210127 17:30:54.319" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="37f30a40-31a8-4cb5-aca1-516091d838f8")&gt;' should have been 'Petrol' but in fact it was '4370'.</msg>
+<status status="FAIL" starttime="20210127 17:30:53.193" endtime="20210127 17:30:54.319"></status>
 </kw>
-<msg timestamp="20210127 16:55:42.402" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="67aefae2-7895-48d8-8702-b9162e16648d")&gt;\' should have been \'Petrol\' ...</msg>
-<status status="PASS" starttime="20210127 16:55:41.833" endtime="20210127 16:55:42.402"></status>
+<msg timestamp="20210127 17:30:54.320" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="37f30a40-31a8-4cb5-aca1-516091d838f8")&gt;\' should have been \'Petrol\' ...</msg>
+<status status="PASS" starttime="20210127 17:30:53.192" endtime="20210127 17:30:54.320"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -375,16 +382,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20210127 16:55:42.477" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="67aefae2-7895-48d8-8702-b9162e16648d")&gt;' text is '4370' </msg>
-<msg timestamp="20210127 16:55:42.478" level="INFO">${text} = 4370</msg>
-<status status="PASS" starttime="20210127 16:55:42.403" endtime="20210127 16:55:42.478"></status>
+<msg timestamp="20210127 17:30:54.604" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="37f30a40-31a8-4cb5-aca1-516091d838f8")&gt;' text is '4370' </msg>
+<msg timestamp="20210127 17:30:54.605" level="INFO">${text} = 4370</msg>
+<status status="PASS" starttime="20210127 17:30:54.320" endtime="20210127 17:30:54.605"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:42.478" endtime="20210127 16:55:42.479"></status>
+<status status="PASS" starttime="20210127 17:30:54.606" endtime="20210127 17:30:54.606"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -396,19 +403,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210127 16:55:42.480" level="INFO">${result} = None</msg>
-<status status="PASS" starttime="20210127 16:55:42.479" endtime="20210127 16:55:42.480"></status>
+<msg timestamp="20210127 17:30:54.607" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20210127 17:30:54.607" endtime="20210127 17:30:54.607"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:42.480" endtime="20210127 16:55:42.481"></status>
+<status status="PASS" starttime="20210127 17:30:54.608" endtime="20210127 17:30:54.608"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:41.832" endtime="20210127 16:55:42.481"></status>
+<status status="PASS" starttime="20210127 17:30:53.191" endtime="20210127 17:30:54.609"></status>
 </kw>
-<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;f74c2169-4807-4c24-b694-add119397028&quot;, element=&quot;62d386b1-76d6-4436-bd2c-d9178f9a3c63&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;bc4a33ee-aebe-4358-a14a-5a90e61a9403&quot;, element=&quot;3389f5ed-43a1-4a90-a50f-8ae38efe11e1&quot;)&gt;" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <arguments>
@@ -425,17 +432,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${ele}</arg>
 <arg>Petrol</arg>
 </arguments>
-<msg timestamp="20210127 16:55:42.484" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="62d386b1-76d6-4436-bd2c-d9178f9a3c63")&gt;' contains exactly text 'Petrol'.</msg>
+<msg timestamp="20210127 17:30:54.612" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3389f5ed-43a1-4a90-a50f-8ae38efe11e1")&gt;' contains exactly text 'Petrol'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:43.037" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:42.525" endtime="20210127 16:55:43.038"></status>
+<msg timestamp="20210127 17:30:55.178" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:54.654" endtime="20210127 17:30:55.179"></status>
 </kw>
-<msg timestamp="20210127 16:55:43.040" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="62d386b1-76d6-4436-bd2c-d9178f9a3c63")&gt;' should have been 'Petrol' but in fact it was '1900'.</msg>
-<status status="FAIL" starttime="20210127 16:55:42.482" endtime="20210127 16:55:43.040"></status>
+<msg timestamp="20210127 17:30:55.180" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3389f5ed-43a1-4a90-a50f-8ae38efe11e1")&gt;' should have been 'Petrol' but in fact it was '1900'.</msg>
+<status status="FAIL" starttime="20210127 17:30:54.610" endtime="20210127 17:30:55.180"></status>
 </kw>
-<msg timestamp="20210127 16:55:43.040" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="62d386b1-76d6-4436-bd2c-d9178f9a3c63")&gt;\' should have been \'Petrol\' ...</msg>
-<status status="PASS" starttime="20210127 16:55:42.482" endtime="20210127 16:55:43.041"></status>
+<msg timestamp="20210127 17:30:55.180" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3389f5ed-43a1-4a90-a50f-8ae38efe11e1")&gt;\' should have been \'Petrol\' ...</msg>
+<status status="PASS" starttime="20210127 17:30:54.609" endtime="20210127 17:30:55.181"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -445,16 +452,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20210127 16:55:43.085" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="62d386b1-76d6-4436-bd2c-d9178f9a3c63")&gt;' text is '1900' </msg>
-<msg timestamp="20210127 16:55:43.086" level="INFO">${text} = 1900</msg>
-<status status="PASS" starttime="20210127 16:55:43.041" endtime="20210127 16:55:43.086"></status>
+<msg timestamp="20210127 17:30:55.228" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3389f5ed-43a1-4a90-a50f-8ae38efe11e1")&gt;' text is '1900' </msg>
+<msg timestamp="20210127 17:30:55.228" level="INFO">${text} = 1900</msg>
+<status status="PASS" starttime="20210127 17:30:55.181" endtime="20210127 17:30:55.228"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:43.086" endtime="20210127 16:55:43.087"></status>
+<status status="PASS" starttime="20210127 17:30:55.229" endtime="20210127 17:30:55.229"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -466,19 +473,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210127 16:55:43.088" level="INFO">${result} = None</msg>
-<status status="PASS" starttime="20210127 16:55:43.087" endtime="20210127 16:55:43.088"></status>
+<msg timestamp="20210127 17:30:55.230" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20210127 17:30:55.230" endtime="20210127 17:30:55.231"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:43.089" endtime="20210127 16:55:43.090"></status>
+<status status="PASS" starttime="20210127 17:30:55.231" endtime="20210127 17:30:55.232"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:42.481" endtime="20210127 16:55:43.091"></status>
+<status status="PASS" starttime="20210127 17:30:54.609" endtime="20210127 17:30:55.232"></status>
 </kw>
-<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;f74c2169-4807-4c24-b694-add119397028&quot;, element=&quot;0ad1b212-4494-4b37-a184-1bf0b01cb4e9&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;bc4a33ee-aebe-4358-a14a-5a90e61a9403&quot;, element=&quot;3fd6ba88-e1f3-4867-b0c2-abb94d57e92d&quot;)&gt;" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <arguments>
@@ -495,17 +502,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${ele}</arg>
 <arg>Petrol</arg>
 </arguments>
-<msg timestamp="20210127 16:55:43.094" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="0ad1b212-4494-4b37-a184-1bf0b01cb4e9")&gt;' contains exactly text 'Petrol'.</msg>
+<msg timestamp="20210127 17:30:55.235" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3fd6ba88-e1f3-4867-b0c2-abb94d57e92d")&gt;' contains exactly text 'Petrol'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:43.603" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:43.125" endtime="20210127 16:55:43.604"></status>
+<msg timestamp="20210127 17:30:55.793" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:55.269" endtime="20210127 17:30:55.793"></status>
 </kw>
-<msg timestamp="20210127 16:55:43.605" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="0ad1b212-4494-4b37-a184-1bf0b01cb4e9")&gt;' should have been 'Petrol' but in fact it was '1609'.</msg>
-<status status="FAIL" starttime="20210127 16:55:43.092" endtime="20210127 16:55:43.605"></status>
+<msg timestamp="20210127 17:30:55.794" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3fd6ba88-e1f3-4867-b0c2-abb94d57e92d")&gt;' should have been 'Petrol' but in fact it was '1609'.</msg>
+<status status="FAIL" starttime="20210127 17:30:55.233" endtime="20210127 17:30:55.795"></status>
 </kw>
-<msg timestamp="20210127 16:55:43.605" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="0ad1b212-4494-4b37-a184-1bf0b01cb4e9")&gt;\' should have been \'Petrol\' ...</msg>
-<status status="PASS" starttime="20210127 16:55:43.091" endtime="20210127 16:55:43.606"></status>
+<msg timestamp="20210127 17:30:55.795" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3fd6ba88-e1f3-4867-b0c2-abb94d57e92d")&gt;\' should have been \'Petrol\' ...</msg>
+<status status="PASS" starttime="20210127 17:30:55.233" endtime="20210127 17:30:55.795"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -515,16 +522,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20210127 16:55:43.641" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="0ad1b212-4494-4b37-a184-1bf0b01cb4e9")&gt;' text is '1609' </msg>
-<msg timestamp="20210127 16:55:43.641" level="INFO">${text} = 1609</msg>
-<status status="PASS" starttime="20210127 16:55:43.606" endtime="20210127 16:55:43.642"></status>
+<msg timestamp="20210127 17:30:55.834" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="3fd6ba88-e1f3-4867-b0c2-abb94d57e92d")&gt;' text is '1609' </msg>
+<msg timestamp="20210127 17:30:55.835" level="INFO">${text} = 1609</msg>
+<status status="PASS" starttime="20210127 17:30:55.795" endtime="20210127 17:30:55.835"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:43.642" endtime="20210127 16:55:43.643"></status>
+<status status="PASS" starttime="20210127 17:30:55.836" endtime="20210127 17:30:55.836"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -536,19 +543,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210127 16:55:43.643" level="INFO">${result} = None</msg>
-<status status="PASS" starttime="20210127 16:55:43.643" endtime="20210127 16:55:43.644"></status>
+<msg timestamp="20210127 17:30:55.837" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20210127 17:30:55.837" endtime="20210127 17:30:55.837"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:43.644" endtime="20210127 16:55:43.645"></status>
+<status status="PASS" starttime="20210127 17:30:55.838" endtime="20210127 17:30:55.838"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:43.091" endtime="20210127 16:55:43.645"></status>
+<status status="PASS" starttime="20210127 17:30:55.232" endtime="20210127 17:30:55.838"></status>
 </kw>
-<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;f74c2169-4807-4c24-b694-add119397028&quot;, element=&quot;02b9545f-3f9d-4fd5-aa11-4e72fb8dcf7d&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;bc4a33ee-aebe-4358-a14a-5a90e61a9403&quot;, element=&quot;4a179289-1535-4696-9153-a553cc43fb82&quot;)&gt;" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <arguments>
@@ -565,17 +572,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${ele}</arg>
 <arg>Petrol</arg>
 </arguments>
-<msg timestamp="20210127 16:55:43.648" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="02b9545f-3f9d-4fd5-aa11-4e72fb8dcf7d")&gt;' contains exactly text 'Petrol'.</msg>
+<msg timestamp="20210127 17:30:55.841" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="4a179289-1535-4696-9153-a553cc43fb82")&gt;' contains exactly text 'Petrol'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:44.299" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:43.691" endtime="20210127 16:55:44.299"></status>
+<msg timestamp="20210127 17:30:56.405" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:55.883" endtime="20210127 17:30:56.405"></status>
 </kw>
-<msg timestamp="20210127 16:55:44.300" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="02b9545f-3f9d-4fd5-aa11-4e72fb8dcf7d")&gt;' should have been 'Petrol' but in fact it was '5'.</msg>
-<status status="FAIL" starttime="20210127 16:55:43.646" endtime="20210127 16:55:44.301"></status>
+<msg timestamp="20210127 17:30:56.406" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="4a179289-1535-4696-9153-a553cc43fb82")&gt;' should have been 'Petrol' but in fact it was '5'.</msg>
+<status status="FAIL" starttime="20210127 17:30:55.840" endtime="20210127 17:30:56.407"></status>
 </kw>
-<msg timestamp="20210127 16:55:44.301" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="02b9545f-3f9d-4fd5-aa11-4e72fb8dcf7d")&gt;\' should have been \'Petrol\' ...</msg>
-<status status="PASS" starttime="20210127 16:55:43.645" endtime="20210127 16:55:44.301"></status>
+<msg timestamp="20210127 17:30:56.407" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="4a179289-1535-4696-9153-a553cc43fb82")&gt;\' should have been \'Petrol\' ...</msg>
+<status status="PASS" starttime="20210127 17:30:55.839" endtime="20210127 17:30:56.407"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -585,16 +592,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20210127 16:55:44.339" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="02b9545f-3f9d-4fd5-aa11-4e72fb8dcf7d")&gt;' text is '5' </msg>
-<msg timestamp="20210127 16:55:44.340" level="INFO">${text} = 5</msg>
-<status status="PASS" starttime="20210127 16:55:44.302" endtime="20210127 16:55:44.340"></status>
+<msg timestamp="20210127 17:30:56.485" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="4a179289-1535-4696-9153-a553cc43fb82")&gt;' text is '5' </msg>
+<msg timestamp="20210127 17:30:56.486" level="INFO">${text} = 5</msg>
+<status status="PASS" starttime="20210127 17:30:56.408" endtime="20210127 17:30:56.486"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:44.341" endtime="20210127 16:55:44.341"></status>
+<status status="PASS" starttime="20210127 17:30:56.486" endtime="20210127 17:30:56.487"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -606,19 +613,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210127 16:55:44.342" level="INFO">${result} = None</msg>
-<status status="PASS" starttime="20210127 16:55:44.342" endtime="20210127 16:55:44.343"></status>
+<msg timestamp="20210127 17:30:56.488" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20210127 17:30:56.487" endtime="20210127 17:30:56.488"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:44.343" endtime="20210127 16:55:44.344"></status>
+<status status="PASS" starttime="20210127 17:30:56.489" endtime="20210127 17:30:56.489"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:43.645" endtime="20210127 16:55:44.344"></status>
+<status status="PASS" starttime="20210127 17:30:55.839" endtime="20210127 17:30:56.489"></status>
 </kw>
-<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;f74c2169-4807-4c24-b694-add119397028&quot;, element=&quot;49c0c089-10c6-4348-83d9-153f6bd904af&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;bc4a33ee-aebe-4358-a14a-5a90e61a9403&quot;, element=&quot;7be3df05-764e-4697-aec8-30c2ebb177d0&quot;)&gt;" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <arguments>
@@ -635,17 +642,17 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${ele}</arg>
 <arg>Petrol</arg>
 </arguments>
-<msg timestamp="20210127 16:55:44.348" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="49c0c089-10c6-4348-83d9-153f6bd904af")&gt;' contains exactly text 'Petrol'.</msg>
+<msg timestamp="20210127 17:30:56.493" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="7be3df05-764e-4697-aec8-30c2ebb177d0")&gt;' contains exactly text 'Petrol'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20210127 16:55:44.931" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210127 16:55:44.387" endtime="20210127 16:55:44.932"></status>
+<msg timestamp="20210127 17:30:57.074" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210127 17:30:56.526" endtime="20210127 17:30:57.075"></status>
 </kw>
-<msg timestamp="20210127 16:55:44.933" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="49c0c089-10c6-4348-83d9-153f6bd904af")&gt;' should have been 'Petrol' but in fact it was '1997'.</msg>
-<status status="FAIL" starttime="20210127 16:55:44.346" endtime="20210127 16:55:44.933"></status>
+<msg timestamp="20210127 17:30:57.076" level="FAIL">The text of element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="7be3df05-764e-4697-aec8-30c2ebb177d0")&gt;' should have been 'Petrol' but in fact it was '1997'.</msg>
+<status status="FAIL" starttime="20210127 17:30:56.491" endtime="20210127 17:30:57.076"></status>
 </kw>
-<msg timestamp="20210127 16:55:44.933" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="49c0c089-10c6-4348-83d9-153f6bd904af")&gt;\' should have been \'Petrol\' ...</msg>
-<status status="PASS" starttime="20210127 16:55:44.345" endtime="20210127 16:55:44.934"></status>
+<msg timestamp="20210127 17:30:57.076" level="INFO">${output} = ('FAIL', 'The text of element \'&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="7be3df05-764e-4697-aec8-30c2ebb177d0")&gt;\' should have been \'Petrol\' ...</msg>
+<status status="PASS" starttime="20210127 17:30:56.490" endtime="20210127 17:30:57.077"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -655,16 +662,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20210127 16:55:44.986" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="49c0c089-10c6-4348-83d9-153f6bd904af")&gt;' text is '1997' </msg>
-<msg timestamp="20210127 16:55:44.986" level="INFO">${text} = 1997</msg>
-<status status="PASS" starttime="20210127 16:55:44.934" endtime="20210127 16:55:44.987"></status>
+<msg timestamp="20210127 17:30:57.128" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="7be3df05-764e-4697-aec8-30c2ebb177d0")&gt;' text is '1997' </msg>
+<msg timestamp="20210127 17:30:57.129" level="INFO">${text} = 1997</msg>
+<status status="PASS" starttime="20210127 17:30:57.077" endtime="20210127 17:30:57.129"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:44.987" endtime="20210127 16:55:44.988"></status>
+<status status="PASS" starttime="20210127 17:30:57.130" endtime="20210127 17:30:57.130"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -676,19 +683,19 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${result}</var>
 </assign>
-<msg timestamp="20210127 16:55:44.988" level="INFO">${result} = None</msg>
-<status status="PASS" starttime="20210127 16:55:44.988" endtime="20210127 16:55:44.989"></status>
+<msg timestamp="20210127 17:30:57.131" level="INFO">${result} = None</msg>
+<status status="PASS" starttime="20210127 17:30:57.131" endtime="20210127 17:30:57.131"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:44.989" endtime="20210127 16:55:44.990"></status>
+<status status="PASS" starttime="20210127 17:30:57.132" endtime="20210127 17:30:57.132"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:44.345" endtime="20210127 16:55:44.990"></status>
+<status status="PASS" starttime="20210127 17:30:56.490" endtime="20210127 17:30:57.133"></status>
 </kw>
-<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;f74c2169-4807-4c24-b694-add119397028&quot;, element=&quot;c4b09101-bc8d-4b41-bcca-ee5106948ca4&quot;)&gt;" type="foritem">
+<kw name="${ele} = &lt;appium.webdriver.webelement.WebElement (session=&quot;bc4a33ee-aebe-4358-a14a-5a90e61a9403&quot;, element=&quot;937dd632-9f27-49d6-aeff-25a17b5145b0&quot;)&gt;" type="foritem">
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
 <arguments>
@@ -705,11 +712,11 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${ele}</arg>
 <arg>Petrol</arg>
 </arguments>
-<msg timestamp="20210127 16:55:44.994" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="c4b09101-bc8d-4b41-bcca-ee5106948ca4")&gt;' contains exactly text 'Petrol'.</msg>
-<status status="PASS" starttime="20210127 16:55:44.992" endtime="20210127 16:55:45.600"></status>
+<msg timestamp="20210127 17:30:57.136" level="INFO">Verifying element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="937dd632-9f27-49d6-aeff-25a17b5145b0")&gt;' contains exactly text 'Petrol'.</msg>
+<status status="PASS" starttime="20210127 17:30:57.134" endtime="20210127 17:30:57.180"></status>
 </kw>
-<msg timestamp="20210127 16:55:45.601" level="INFO">${output} = ('PASS', None)</msg>
-<status status="PASS" starttime="20210127 16:55:44.991" endtime="20210127 16:55:45.601"></status>
+<msg timestamp="20210127 17:30:57.180" level="INFO">${output} = ('PASS', None)</msg>
+<status status="PASS" starttime="20210127 17:30:57.133" endtime="20210127 17:30:57.180"></status>
 </kw>
 <kw name="Get Text" library="AppiumLibrary">
 <doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
@@ -719,16 +726,16 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <assign>
 <var>${text}</var>
 </assign>
-<msg timestamp="20210127 16:55:45.626" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="f74c2169-4807-4c24-b694-add119397028", element="c4b09101-bc8d-4b41-bcca-ee5106948ca4")&gt;' text is 'Petrol' </msg>
-<msg timestamp="20210127 16:55:45.626" level="INFO">${text} = Petrol</msg>
-<status status="PASS" starttime="20210127 16:55:45.602" endtime="20210127 16:55:45.626"></status>
+<msg timestamp="20210127 17:30:57.796" level="INFO">Element '&lt;appium.webdriver.webelement.WebElement (session="bc4a33ee-aebe-4358-a14a-5a90e61a9403", element="937dd632-9f27-49d6-aeff-25a17b5145b0")&gt;' text is 'Petrol' </msg>
+<msg timestamp="20210127 17:30:57.797" level="INFO">${text} = Petrol</msg>
+<status status="PASS" starttime="20210127 17:30:57.181" endtime="20210127 17:30:57.797"></status>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <doc>Logs the given message to the console.</doc>
 <arguments>
 <arg>${text}</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:45.630" endtime="20210127 16:55:45.630"></status>
+<status status="PASS" starttime="20210127 17:30:57.797" endtime="20210127 17:30:57.798"></status>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
@@ -745,22 +752,22 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arguments>
 <arg>passed</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:45.631" endtime="20210127 16:55:45.632"></status>
+<status status="PASS" starttime="20210127 17:30:57.799" endtime="20210127 17:30:57.800"></status>
 </kw>
-<msg timestamp="20210127 16:55:45.632" level="INFO">${result} = passed</msg>
-<status status="PASS" starttime="20210127 16:55:45.631" endtime="20210127 16:55:45.632"></status>
+<msg timestamp="20210127 17:30:57.800" level="INFO">${result} = passed</msg>
+<status status="PASS" starttime="20210127 17:30:57.799" endtime="20210127 17:30:57.800"></status>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
 <arguments>
 <arg>'${output}[0]'=='PASS'</arg>
 </arguments>
-<msg timestamp="20210127 16:55:45.633" level="INFO">Exiting for loop altogether.</msg>
-<status status="PASS" starttime="20210127 16:55:45.633" endtime="20210127 16:55:45.634"></status>
+<msg timestamp="20210127 17:30:57.801" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210127 17:30:57.800" endtime="20210127 17:30:57.801"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:44.991" endtime="20210127 16:55:45.634"></status>
+<status status="PASS" starttime="20210127 17:30:57.133" endtime="20210127 17:30:57.801"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:41.832" endtime="20210127 16:55:45.634"></status>
+<status status="PASS" starttime="20210127 17:30:53.191" endtime="20210127 17:30:57.802"></status>
 </kw>
 <kw name="Should Be Equal" library="BuiltIn">
 <doc>Fails if the given objects are unequal.</doc>
@@ -768,27 +775,31 @@ Normal swipe fails to scale for different screen resolutions, this can be avoide
 <arg>${result}</arg>
 <arg>passed</arg>
 </arguments>
-<status status="PASS" starttime="20210127 16:55:45.634" endtime="20210127 16:55:45.635"></status>
+<status status="PASS" starttime="20210127 17:30:57.802" endtime="20210127 17:30:57.803"></status>
 </kw>
 <kw name="Go Back" library="AppiumLibrary">
 <doc>Goes one step backward in the browser history.</doc>
-<status status="PASS" starttime="20210127 16:55:45.635" endtime="20210127 16:55:45.821"></status>
+<status status="PASS" starttime="20210127 17:30:57.803" endtime="20210127 17:30:58.006"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
-<arg>10s</arg>
+<arg>5s</arg>
 </arguments>
-<msg timestamp="20210127 16:55:55.824" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20210127 16:55:45.822" endtime="20210127 16:55:55.824"></status>
+<msg timestamp="20210127 17:31:03.010" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210127 17:30:58.007" endtime="20210127 17:31:03.010"></status>
 </kw>
-<status status="PASS" starttime="20210127 16:55:06.296" endtime="20210127 16:55:55.825" critical="yes"></status>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20210127 17:31:03.011" endtime="20210127 17:31:03.853"></status>
+</kw>
+<status status="PASS" starttime="20210127 17:30:23.591" endtime="20210127 17:31:03.854" critical="yes"></status>
 </test>
-<status status="PASS" starttime="20210127 16:55:06.037" endtime="20210127 16:55:55.826"></status>
+<status status="PASS" starttime="20210127 17:30:23.316" endtime="20210127 17:31:03.855"></status>
 </suite>
-<status status="PASS" starttime="20210127 16:55:06.033" endtime="20210127 16:55:55.829"></status>
+<status status="PASS" starttime="20210127 17:30:23.310" endtime="20210127 17:31:03.858"></status>
 </suite>
-<status status="PASS" starttime="20210127 16:55:05.997" endtime="20210127 16:55:55.832"></status>
+<status status="PASS" starttime="20210127 17:30:23.233" endtime="20210127 17:31:03.860"></status>
 </suite>
 <statistics>
 <total>
