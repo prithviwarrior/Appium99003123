@@ -55,9 +55,10 @@ TC1_VerifyCarinfo
     
      Go Back
      
+    Sleep    5s    
+    
 
-
-    # Close Application
+    Close Application
     
 
     
