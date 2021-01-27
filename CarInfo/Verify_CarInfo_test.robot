@@ -53,7 +53,8 @@ TC1_VerifyCarinfo
     Should Be Equal    ${result}    passed    
     # Element Text Should Be    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]    Petrol
     
- 
+     Go Back
+
     # Close Application
     
 
