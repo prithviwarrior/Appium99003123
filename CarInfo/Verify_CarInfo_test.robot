@@ -23,6 +23,7 @@ TC1_VerifyCarinfo
         Exit For Loop If    '${output}[0]'=='PASS'
     END  
     
+    # Execute Adb Shell    input touchscreen swipe     500    900    500    400
     
     FOR    ${i}    IN RANGE    0    999
         ${output}    Run Keyword And Ignore Error    Click Element    //*[contains(@text,"Range Rover Evoque")]        
@@ -30,14 +31,18 @@ TC1_VerifyCarinfo
         Exit For Loop If    '${output}[0]'=='PASS'
     END  
     
-
+    FOR    ${i}    IN RANGE    0    999
+        ${output}    Run Keyword And Ignore Error    Click Element    //*[contains(@text,"HSE Dynamic Petrol")]        
+        Swipe By Percent    50    75    50    25    1000    
+        Exit For Loop If    '${output}[0]'=='PASS'
+    END
     
+    ${elements}    Get Webelements    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]
+    Log To Console    ${elements}        
+
+    Element Text Should Be    //*[@resource-id="com.cuvora.carinfo:id/carPropertyValueTextView"]    Petrol
     
-    # Run Keyword And Ignore Error     Click Element   //*[@resource-id='com.aranoah.healthkart.plus:id/close']
-
-    # Wait Until Element Is Visible    //*[@text='Health Products']
-    # Click Element    //*[@text='Health Products']    #xpath is different
-
+ 
     # Close Application
     
 
